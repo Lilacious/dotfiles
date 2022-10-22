@@ -1,0 +1,39 @@
+#! /bin/bash
+
+#########################################
+#		ALIASES			#
+#########################################
+
+# colorize ls output #
+alias ls='ls --color=auto -F'
+# remove unused dependencies #
+alias killallorphans='sudo pacman -R $(pacman -Qtdq)'
+# acronym for clear #
+alias c='clear'
+# pause between pings shortened #
+alias fastping='ping -c 5 -i 0.002'
+# snapshot manager
+alias snapshot='sudo btrfs-assistant'
+# reload font cache
+alias reloadfontcache='fc-cache -fv' 
+# connect TU-Darmstadt SSH
+	# client ssh 1
+alias connect-tud-ssh1='ssh -X yh74niju@clientssh1.rbg.informatik.tu-darmstadt.de -i ~/.config/ssh/tud/id_rsa'
+	# client ssh 2
+alias connect-tud-ssh2='ssh -X yh74niju@clientssh2.rbg.informatik.tu-darmstadt.de -i ~/.config/ssh/tud/id_rsa'
+	# client ssh 3
+alias connect-tud-ssh4='ssh -X yh74niju@clientssh3.rbg.informatik.tu-darmstadt.de -i ~/.config/ssh/tud/id_rsa'
+	# client ssh 4
+alias connect-tud-ssh4='ssh -X yh74niju@clientssh4.rbg.informatik.tu-darmstadt.de -i ~/.config/ssh/tud/id_rsa'
+	# client ssh 5
+alias connect-tud-ssh5='ssh -X yh74niju@clientssh5.rbg.informatik.tu-darmstadt.de -i ~/.config/ssh/tud/id_rsa'
+	# client ssh arm processor
+alias connect-tud-ssh-arm='ssh -X yh74niju@clientssh-arm.rbg.informatik.tu-darmstadt.de -i ~/.config/ssh/tud/id_rsa'
+# yarn XDG_CONFIG_HOME
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+# vi vim nvim
+alias vi='nvim'
+alias vim='nvim'
+# update pacman mirror
+alias update-mirrorlist='sudo reflector --verbose --country Germany -l 5 --sort rate --save /etc/pacman.d/mirrorlist'
+
