@@ -1,0 +1,9 @@
+#! /bin/sh
+if [ $(bluetoothctl show | grep "Powered: yes" | wc -c) -eq 0 ]; then 
+	echo "%{F#6c809e}󰂲%{F-}"
+elif [ $(echo info | bluetoothctl | grep 'Device' | wc -c) -eq 0 ]; then
+	echo "󰂯"
+else
+	echo "󰂱"	
+fi
+

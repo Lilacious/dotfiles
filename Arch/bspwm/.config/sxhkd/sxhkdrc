@@ -39,8 +39,8 @@ XF86AudioMute
 XF86AudioMicMute
 	pulseaudio-ctl mute-input
 ##### Toggle Bluetooth #####
-XF86Bluetooth
-	toggle_bluetooth
+#XF86Bluetooth
+#	toggle_bluetooth
 # lockscreen
 alt + shift + x
     betterlockscreen -l dim

@@ -16,8 +16,7 @@ alias fastping='ping -c 5 -i 0.002'
 alias snapshot='sudo btrfs-assistant'
 # reload font cache
 alias reloadfontcache='fc-cache -fv' 
-
-# yarn XDG_CONFIG_HOME
+#yarn XDG_CONFIG_HOME
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 # vi vim nvim
 alias vi='nvim'
