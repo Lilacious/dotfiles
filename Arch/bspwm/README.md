@@ -12,3 +12,8 @@ Type=Appliction
 
 and copy the bspwm .xinitrc file to the specified location    
 
+# fonts required for polybar and alacritty
+ttf-material-design-icons-desktop-git   
+ttf-icomoon-feather   
+ttf-breeze-sans   
+Comic Code
