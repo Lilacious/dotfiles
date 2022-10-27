@@ -1,0 +1,9 @@
+#!/bin/sh
+
+used=$(echo "$(free | awk '/^Mem:/ {print $3/2^20}')")
+total=$(echo "$(free | awk '/^Mem:/ {print $2/2^20}')")
+
+roundedUsed=$(echo "$used" | awk '{printf("%.2f",$1)}'  )
+roundedTotal=$(echo "$total" | awk '{printf("%.1f",$1)}' )
+echo "%{T1} ${roundedUsed}G%{T-}%{T3}%{O-35}${roundedTotal}G%{T-}%{F-}"
+
