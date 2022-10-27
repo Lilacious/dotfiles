@@ -17,3 +17,24 @@ ttf-material-design-icons-desktop-git
 ttf-icomoon-feather   
 ttf-breeze-sans   
 Comic Code
+
+# packages required for bspwm
+betterlockscreen			
+brillo		
+bluez		
+bluez-utils		
+dunst		
+dmenu		
+pamixer		
+picom		
+polybar		
+pulseaudio		
+redshift		
+rofi		
+sxhkd		
+xorg-server && graphics driver		
+xorg-sev	
+xorg-xfd		
+xorg-xinit	
+xwallpaper		
+zathura		
